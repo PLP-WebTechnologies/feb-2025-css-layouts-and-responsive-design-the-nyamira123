@@ -1,0 +1,71 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content - Grid layout */
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.content {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.sidebar {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
+
